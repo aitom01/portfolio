@@ -27,7 +27,7 @@ $config->timezone = 'America/New_York';
  * sessionName: default session name as used in session cookie
  *
  */
-$config->sessionName = 'wire';
+$config->sessionName = 'PWportfolio';
 
 /**
  * sessionExpireSeconds: how many seconds of inactivity before session expires
@@ -55,7 +55,7 @@ $config->sessionFingerprint = true;
  * Uncomment and edit to enable.
  *
  */
-// $config->prependTemplateFile = '_init.php';
+ $config->prependTemplateFile = '_init.php';
 
 /**
  * appendTemplateFile: PHP file in /site/templates/ that will be loaded after each page's template file
@@ -63,7 +63,7 @@ $config->sessionFingerprint = true;
  * Uncomment and edit to enable.
  *
  */
-// $config->appendTemplateFile = '_done.php';
+$config->appendTemplateFile = '_out.php';
 
 /**
  * uploadUnzipCommand: shell command to unzip archives, used by WireUpload class. 
@@ -90,7 +90,7 @@ $config->uploadBadExtensions = 'php php3 phtml exe cfm shtml asp pl cgi sh vbs j
  * adminEmail: address to send optional fatal error notifications to.
  *
  */
-$config->adminEmail = '';
+$config->adminEmail = 'tom@aitom.net';
 
 /**
  * Prefix to use in page URLs for page numbers, i.e. a prefix of 'page' would use 'page1', 'page2', etc. 
