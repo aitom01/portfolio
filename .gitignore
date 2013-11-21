@@ -1,6 +1,6 @@
 # Sublime Text projet files
-portfolio.sublime-project
-portfolio.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 
 #################
 ## Eclipse
