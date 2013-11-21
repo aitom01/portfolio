@@ -1,0 +1,209 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"templ",
+				"template"
+			],
+			[
+				"child",
+				"children"
+			],
+			[
+				"num",
+				"numChildren"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 188.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/tom_000/AppData/Roaming/Sublime Text 2/Packages/User/phpcs.sublime-settings",
+		"/C/Users/tom_000/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/tom_000/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/tom_000/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Temp/Monokai Expanded.tmtheme.zip",
+		"/C/wamp/www/pw/site/templates/foscor-top.inc",
+		"/C/wamp/www/pw/site/templates/sitemap.php",
+		"/C/wamp/www/_cms/ProcessWire-master/site-default/templates/head.inc",
+		"/C/wamp/www/FoundationSiteProfile-master/templates/basic-page.php",
+		"/C/wamp/www/pwblog/site/config.php",
+		"/C/wamp/www/pw/site/templates/news.php",
+		"/C/wamp/www/pw/site/templates/foscor-bottom.inc",
+		"/C/wamp/www/pw/site/templates/children.php",
+		"/C/wamp/www/pw/site/templates/project.php",
+		"/C/wamp/www/pw/site/templates/projects.php",
+		"/C/wamp/www/pw/site/templates/head.inc",
+		"/C/wamp/www/website/index.html",
+		"/C/wamp/www/pw/site/templates/basic-page.php",
+		"/C/wamp/www/pw/site/templates/foscor-home.php",
+		"/C/wamp/www/pw/site/templates/styles/foscor/css/style.css",
+		"/C/wamp/www/pw/site/templates-admin/default.php",
+		"/C/wamp/www/pw/site/templates-admin/controller.php",
+		"/C/wamp/www/pw/site/templates/footer.php",
+		"/C/wamp/www/pw/site/templates/foscor.php",
+		"/C/wamp/www/pw/site/templates/home.php",
+		"/C/wamp/www/website/about.html",
+		"/C/wamp/www/pw/index.php",
+		"/C/wamp/www/pw/site/assets/index.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"+e",
+			">\n",
+			"snippet",
+			">\n",
+			"renderSkyscraperList",
+			"22",
+			"logo",
+			"();\n",
+			"src=\"",
+			"href=\"css/",
+			"src=\"",
+			"src",
+			"href",
+			"\">\n",
+			"css/",
+			"href=\"css"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"src=\"site/templates/styles/foscor/",
+			"href=\"<?php echo $config->urls->templates?>styles/foscor/css/",
+			"src=\"site/templates/styles/foscor/",
+			"styles/foscor/css/",
+			"href=\"<?php echo $config->urls->templates?>css"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 154.0
+	},
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true
+}
