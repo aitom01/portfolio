@@ -219,7 +219,12 @@ $config->dbName = 'portfolio';
 $config->dbUser = 'aitom';
 $config->dbPass = 'datel';
 $config->dbPort = '3306';
-
+if(isset($_SERVER['RDS_HOSTNAME'])){
+	$config->dbHost = $_SERVER['RDS_HOSTNAME'];
+	$config->dbUser = $_SERVER['RDS_USERNAME'];
+	$config->dbPass = $_SERVER['RDS_PASSWORD'];
+	$config->dbPort = $_SERVER['RDS_PORT'];
+}
 /**
  * Installer: User Authentication Salt 
  * 

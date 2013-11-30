@@ -42,8 +42,4 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 // displays the current search query in the search box (via the $input->whitelist) and 
 // we wanted to make sure we had that setup before including the header template. 
 
-include("./head.inc"); 
-
-echo $out; 
-
-include("./foot.inc"); 
+$content = $out; 

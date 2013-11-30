@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<base href="<?php echo $config->urls->root; ?>" />
-    <meta charset="utf-8">
+    <base href="<?php echo $config->urls->root; ?>" />
+    <meta charset="utf-8" />
+    <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<?php echo $browserDescription; ?>" />
+    <meta name="keywords" content="<?php echo $browserKeywords; ?>" />
+    <meta name="author" content="Tomas Pokorny, developer@aitom.net" />
+    <link rel="shortcut icon" href="site/templates/styles/fav3.ico"/>
     <title><?php echo $browserTitle; ?></title>
-
-    <link href="site/templates/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="site/templates/styles/main.css" rel="stylesheet">
-
+    <link href="site/templates/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="site/templates/scripts/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" media="screen" />
+    <link href="site/templates/styles/main.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'/>  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,64 +25,57 @@
   </head>
 
   <body>
-
-    <!-- Wrap all page content here -->
-    <div id="wrap">
-
+    <div id="page">
       <!-- Fixed navbar -->
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <header>
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
+          <div class="row">
+            <h1 class="col-sm-6 col-xs-12"><a href="<?php echo $config->urls->root; ?>"><?php echo $homepage->title; ?></a><span class="visible-desktop visible-tablet"><?php echo $page->headline; ?></span></h1>
+            <div class="visible-xs clearfix"></div>
+            <nav class="navbar navbar-default col-sm-6" role="navigation">
+              <ul class="nav navbar-nav navbar-right">
+<?php
+foreach($homepage->children as $child) {
+  $active='';
+  if($page->name==$child->name) $active = " class='active'";
+  echo "<li{$active}><a{$active} href='{$child->url}'>{$child->title}</a></li>\n";
+}
+?>
+              </ul>
+            </nav>
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
         </div>
-      </div>
+      </header>
 
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1><?php echo $headline; ?></h1>
+      <main id="content"><?php echo $content; ?>
+
+      </main>
+      <footer id="footer" class="container">
+        <div>
+          <address>
+          <ul>
+            <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:<?php echo $homepage->email_address; ?>"><?php echo $homepage->email_address; ?></a></li>
+            <li><span class="glyphicon glyphicon-phone"></span> <?php echo $homepage->phone_number; ?></li>
+            <li><span class="glyphicon glyphicon-map-marker"></span> <?php echo $homepage->location; ?></li>
+          </ul>
+          </address>
         </div>
-<?php echo $content; ?>
-      </div>
+      </footer>
     </div>
 
-    <div id="footer">
-      <div class="container">
-        <p class="text-muted credit">Footer credit</p>
-      </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="site/templates/bootstrap/js/bootstrap.min.js"></script>
+    <script src="site/templates/scripts/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script src="site/templates/scripts/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46114941-1', 'aitom.net');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>

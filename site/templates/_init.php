@@ -17,8 +17,17 @@
  * default values for them. 
  *
  */
+$homepage = $pages->get("/");
+$browserTitle = $homepage->title; 	// what appears in the <title> tag
 
-$browserTitle = $page->title; 	// what appears in the <title> tag
+if($page->summary) $browserDescription = strip_tags($page->summary);
+else $browserDescription = strip_tags($homepage->summary);
+
+$browserKeywords = $homepage->keywords;
+if($page->keywords && $page!=$homepage) $browserKeywords = $browserKeywords.", ".$page->keywords; 
+
+if($page!=$homepage) $browserTitle = $page->title." / ".$homepage->title;
+if($page->headline) $browserTitle = $homepage->title.strip_tags($page->headline);
 $headline = $page->title; 		// primary h1 headline
 $content = $page->body; 		// bodycopy area
 
@@ -35,4 +44,3 @@ if($input->pageNum > 1) $browserTitle .= " - Page {$input->pageNum}";
  */
 
 include("./includes/functions.php"); 
-
